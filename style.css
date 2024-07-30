@@ -1,0 +1,333 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, address {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Lato, "Trebuchet MS", "Verdana", "sans-serif";
+    background-image: url("img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+/* Header styling */
+header {
+    background: rgba(51, 51, 51, 0.8); /* Changed to rgba for opacity */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Added blur effect */
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #aaa;
+}
+
+.cart-icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.cart-icon img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Intro section styling */
+.intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.intro img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.intro p {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+/* Section styling */
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section p, .section ul {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.section ul {
+    list-style: disc inside;
+}
+
+/* Car models styling */
+.car-models {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.car-model {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-model:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.car-model img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.car-model h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.car-model p {
+    color: #ffffff;
+}
+
+.car-model button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 10px; /* Ensure there is space between the image/description and the button */
+}
+
+.car-model button:hover {
+    background: #555;
+}
+
+
+.car-model button:hover {
+    background: #555;
+}
+
+/* Footer styling */
+footer {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Added blur effect */
+}
+
+/* Cart page styling */
+.cart-item {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item button {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cart-item button:hover {
+    background: #ff1a1a;
+}
+
+#total-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Contact page styling */
+.contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 10px 0;
+}
+
+
+
+/* Checkout page styling */
+.checkout {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.checkout h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#selected-car {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#checkout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#checkout-form label {
+    margin: 10px 0 5px;
+    color: #fff;
+}
+
+#checkout-form input,
+#checkout-form select,
+#checkout-form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+#checkout-form input,
+#checkout-form select {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+#checkout-form button {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#checkout-form button:hover {
+    background: #555;
+}
+.logo {
+    width: 10%;
+    height: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+}
